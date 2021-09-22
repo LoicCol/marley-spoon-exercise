@@ -1,7 +1,9 @@
 export type Recipe = {
   id: string
   title: string
-  image?: File
+  image?: {
+    url: string
+  }
   tags: string[]
   description?: string
   chefName?: string
