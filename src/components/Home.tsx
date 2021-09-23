@@ -49,8 +49,11 @@ function Home() {
         <Route path='/recipes/:recipeId'>
           <RecipeDetails recipes={recipes} />
         </Route>
-        <Route path='/'>
+        <Route path='/recipes'>
           <RecipesList recipes={recipes} />
+        </Route>
+        <Route path='/'>
+          <Redirect to='/recipes' />
         </Route>
       </Switch>
     </Router>
